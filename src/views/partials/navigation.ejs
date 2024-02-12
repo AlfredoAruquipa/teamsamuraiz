@@ -1,53 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <!-- fonr awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+
+</head>
 <body>
-	<header3>
-    
-    <nav class="menu ">
-      <div class="btn">
-        <i class="fas fa-times close-btn"></i>
-      </div>
-    </nav>
-      <header>
-    
-        <a href="#" class="brand">
-          <img src="img/logosamu.png">
-        </a>
-        <nav class="menu">
-          <div class="btn">
-            <i class="fas fa-times close-btn"></i>
-          </div>
-          <ul>
-            <li><a href="/">INICIO</a></li>
+	<header>
+      <a href="#" class="brand">
+      	<img src="img/logosamu.png">
+      </a>
+      <nav class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <ul>
+        	<li><a href="/">INICIO</a></li>
             <li><a href="/integrant">INTEGRANTES</a></li>
             <li><a href="/about">NOSOTROS</a></li>
             <li><a href="#">EVENTOS</a></li>
             <li><a href="/contact">CONTACTANOS</a></li>
             <li><a href="#">TIENDA</a></li>
-          </ul>
-        </nav>
-        <div class="btn">
-          <i class="fas fa-bars menu-btn"></i>
-          <li><a href="#">Contact</a></li>
-        </div>
-      </header>
-
-    </header3>
-
-    <footer2>
-
-      <nav class="menu">
-        <div class="btn">
-          <i class="fas fa-times close-btn"></i>
-        </div>
+        </ul>
       </nav>
-      <footer3>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
 
-        <nav class="menu">
-       
-            <i class="fas fa-times close-btn"></i>
-       
-        </nav>
-      </footer3>
-    </footer2>
 
     <script type="text/javascript">
     //javascript for navigation bar effect on scroll
@@ -55,8 +40,6 @@
       var header = document.querySelector("header");
       header.classList.toggle('down', window.scrollY > 0);
 
-
-      
 	    //change logo
 	    var logo = document.querySelector(".brand img");
 		if (window.scrollY>0) {
@@ -66,8 +49,6 @@
 		}
 
     });
-
-
 
     //javascript for responsive navigation sidebar menu
     var menu = document.querySelector('.menu');
@@ -82,6 +63,5 @@
       menu.classList.remove('active');
     });
     </script>
-    
 </body>
-
+</html>
