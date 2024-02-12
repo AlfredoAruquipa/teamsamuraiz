@@ -309,6 +309,13 @@ h5 {
     justify-content: center;
     
   }
+  header3 .menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
  
   
   
@@ -357,12 +364,6 @@ h5 {
     cursor: pointer;
     display: none;
   }
-  header .btn2{
-    color: #ff0000;
-    font-size:35px;
-    cursor: pointer;
-    display: none;
-  }
   
   @media (max-width: 991px){
     header, header.down{
@@ -378,7 +379,7 @@ h5 {
     header .menu{
       position: fixed;
       background: #1e1b22ef;
-      backdrop-filter: blur(10px); 
+      backdrop-filter: blur(px); 
       min-width: 330px;
       height: 100vh;
       top: 0;
@@ -507,10 +508,10 @@ h5 {
 
   /*letras del navbarr*/
   header3 .menu{
+    
   
-    display: flex;
     align-items: center;
-  
+    justify-content: center;
     
   }
      /*al inicio*/
@@ -541,7 +542,5 @@ h5 {
 .fa-bars:before {
   padding: 35px 10px;
 }
-.fa-times:before {
-  content: "\f00d";
-}
+   
    
