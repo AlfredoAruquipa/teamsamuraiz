@@ -1,0 +1,87 @@
+<body>
+	<header3>
+    
+    <nav class="menu ">
+      <div class="btn">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+    </nav>
+      <header>
+    
+        <a href="#" class="brand">
+          <img src="img/logosamu.png">
+        </a>
+        <nav class="menu">
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <ul>
+            <li><a href="/">INICIO</a></li>
+            <li><a href="/integrant">INTEGRANTES</a></li>
+            <li><a href="/about">NOSOTROS</a></li>
+            <li><a href="#">EVENTOS</a></li>
+            <li><a href="/contact">CONTACTANOS</a></li>
+            <li><a href="#">TIENDA</a></li>
+          </ul>
+        </nav>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+          <li><a href="#">Contact</a></li>
+        </div>
+      </header>
+
+    </header3>
+
+    <footer2>
+
+      <nav class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+      </nav>
+      <footer3>
+
+        <nav class="menu">
+       
+            <i class="fas fa-times close-btn"></i>
+       
+        </nav>
+      </footer3>
+    </footer2>
+
+    <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('down', window.scrollY > 0);
+
+
+      
+	    //change logo
+	    var logo = document.querySelector(".brand img");
+		if (window.scrollY>0) {
+			logo.setAttribute('src', 'img/logosamu.png');
+		}else{
+			logo.setAttribute('src', 'img/logosamu.png');
+		}
+
+    });
+
+
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+    
+</body>
+
