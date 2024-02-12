@@ -2,6 +2,24 @@
     background: #000;
     color: white;
 } */
+body::-webkit-scrollbar{
+  width: 10px;
+
+}
+body::-webkit-scrollbar-track{
+  background: #130129;
+
+}
+
+body::-webkit-scrollbar-thumb{
+
+  border-radius: 6px;
+  background: #7400f8;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background: #43028f;
+
+}
 
 html{
   height: 100%;
@@ -291,6 +309,8 @@ h5 {
     justify-content: center;
     
   }
+ 
+  
   
   header .menu ul{
     position: relative;
@@ -332,8 +352,14 @@ h5 {
   /*boton de costado*/
   
   header .btn{
-    color: #00ff80;
-    font-size: 25px;
+    color: #ffffff;
+    font-size:35px;
+    cursor: pointer;
+    display: none;
+  }
+  header .btn2{
+    color: #ff0000;
+    font-size:35px;
     cursor: pointer;
     display: none;
   }
@@ -348,15 +374,16 @@ h5 {
     header .btn{
       display: block;
     }
-  /*barra lateral*/
+  /*barra lateral todo mas color*/
     header .menu{
       position: fixed;
-      background: rgba(46, 18, 88, 0.637);
+      background: #1e1b22ef;
+      backdrop-filter: blur(10px); 
       min-width: 330px;
       height: 100vh;
       top: 0;
       right: -100%;
-      padding: 80px 50px;
+      padding: 80px 40px;
       transition: 0s;
       transition-property: right;
     }
@@ -480,10 +507,10 @@ h5 {
 
   /*letras del navbarr*/
   header3 .menu{
-    position: relative;
+  
     display: flex;
     align-items: center;
-    justify-content: center;
+  
     
   }
      /*al inicio*/
@@ -511,5 +538,10 @@ h5 {
   
 
   
-   
+.fa-bars:before {
+  padding: 35px 10px;
+}
+.fa-times:before {
+  content: "\f00d";
+}
    
