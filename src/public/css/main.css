@@ -288,6 +288,7 @@ h5 {
   header.down{
     background: #180a279c;
     backdrop-filter: blur(2px); 
+    border-block: 1px solid #7e2df9;
     padding: 20px 80px;
   
   }
@@ -368,6 +369,7 @@ h5 {
   @media (max-width: 991px){
     header, header.down{
       padding: 20px 40px;
+      border-block: 1px solid #7e2df9;
     }
     footer2, footer2.down{
       padding: 20px 40px;
@@ -543,4 +545,51 @@ h5 {
   padding: 35px 10px;
 }
    
-   
+.headersocial {
+  max-width: 1600px;
+  margin-inline: auto;
+  width: 100%;
+  display: flex;
+  padding-inline: clamp(2vw,10rem,5vw);
+}
+.headerconter {
+  justify-content: flex-end;
+  place-items: center;
+}
+
+.carusel-imagenes {
+  margin: 0; /* Elimina el margen predeterminado del cuerpo del documento */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo del documento */
+  overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal si la imagen es más ancha que la pantalla */
+  
+}
+
+.cotenedor-imagen {
+  width: 100%; /* Hace que la imagen ocupe el 100% del ancho disponible */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
+  display: block; /* Elimina el espacio adicional debajo de la imagen */
+  position: relative;
+ 
+}
+.text{
+
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size:  1.2rem;
+  font-family: 'Trebuchet MS';
+ 
+}
+
+
+.texttit {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-400%,-400%);
+  font-size: 2rem;
+  font-family: 'Trebuchet MS';
+}
