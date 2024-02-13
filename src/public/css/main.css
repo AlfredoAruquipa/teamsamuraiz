@@ -241,9 +241,7 @@ h5 {
     font-family: verdana;
   }
   
-  body{
-    min-height: 100vh;
-  }
+
  /* header . brand img{
     height: 60px;
   }*/
@@ -569,8 +567,13 @@ h5 {
   height: auto; /* Mantiene la proporción de aspecto de la imagen */
   display: block; /* Elimina el espacio adicional debajo de la imagen */
   position: relative;
- 
+
+  flex-flow: row-reverse;
+  max-width: unset;
+  margin-inline: 0;
+  padding-block: 0rem;
 }
+
 .text{
 
   color: #ffffff;
