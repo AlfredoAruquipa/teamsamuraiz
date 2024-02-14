@@ -2,6 +2,8 @@
     background: #000;
     color: white;
 } */
+
+@media (min-width: 768px) {
 body::-webkit-scrollbar{
   width: 10px;
 
@@ -28,7 +30,8 @@ html{
 body{
  /* height: 100%; */
  margin: 0;
- font-family:Arial, Helvetica, sans-serif;
+ font-family: "Monomaniac One", sans-serif;
+ font-style: normal;
  background-color: #160a27;
  display: grid;
  min-height: 100vh;
@@ -77,7 +80,8 @@ body{
 .navbar-light .navbar-nav .nav-link {
   color: rgb(255, 255, 255);
   font-size:  0.9rem;
-  font-family: 'Trebuchet MS';
+  font-family: "Monomaniac One", sans-serif;
+  font-style: normal;
 }
 
 
@@ -96,7 +100,8 @@ body{
 /* neonnavbar */
   .navbar-violet .navbar-nav .nav-link:hover {
     color: #bf2df9;
-    font-family: 'Trebuchet MS';
+    font-family: "Monomaniac One", sans-serif;
+    font-style: normal;
     margin: 0;
     font-size: 15px;
     text-shadow: 0 0 5px #2b1335, 0 0 15px #bf2df9, 0 0 30px #bf2df9;
@@ -104,7 +109,7 @@ body{
   
 
   container img {
-    width: 60%;
+    width: 70%;
   }
 
  
@@ -238,7 +243,8 @@ h5 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: verdana;
+    font-family: "Monomaniac One", sans-serif;
+    font-style: normal;
   }
   
 
@@ -323,6 +329,7 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
+       
   }
   
   header .menu ul li{
@@ -339,7 +346,8 @@ h5 {
 /*para botom circular
     padding: 7px 10px;
     border-radius: 10px;*/
-    font-family: 'Trebuchet MS';
+    font-family: "Monomaniac One", sans-serif;
+    font-style: normal;
     transition-property: color, background;
   
   }
@@ -347,7 +355,8 @@ h5 {
   header .menu a:hover{
    
     color: #bf2df9;
-    font-family: 'Trebuchet MS';
+    font-family: "Monomaniac One", sans-serif;
+    font-style: normal;
     margin: 0;
     text-shadow: 0 0 5px #2b1335, 0 0 5px #bf2df9, 0 0 6px #bf2df9;
   }
@@ -380,11 +389,11 @@ h5 {
       position: fixed;
       background: #1e1b22ef;
       backdrop-filter: blur(px); 
-      min-width: 330px;
+      min-width: 450px;
       height: 100vh;
       top: 0;
       right: -100%;
-      padding: 80px 40px;
+      padding: 80px 40px; 
       transition: 0s;
       transition-property: right;
     }
@@ -491,7 +500,7 @@ h5 {
 
   header3{
     z-index: 999;
-    position: fixed;
+    position: relative;
     top: 50;
     left: 0;
     width: 100%;
@@ -525,7 +534,8 @@ h5 {
 /*para botom circular
     padding: 7px 10px;
     border-radius: 10px;*/
-    font-family: 'Trebuchet MS';
+font-family: "Monomaniac One", sans-serif;
+  font-style: normal;
     transition-property: color, background;
   
   }
@@ -600,4 +610,21 @@ h5 {
   font-size: 1.9rem;
   font-family: "Monomaniac One", sans-serif;
   font-style: normal;
+}
+
+.contenidoindex{
+  transform: translate(10%,10%); 
+height: 20px;
+height: 20px;
+}
+.texttit2 {
+  color: #ffffff;
+  position: absolute;
+  top: 70%;
+  left:40%;
+  transform: translate(10%,-250%); 
+  font-size: 3rem;
+  font-family: "Monomaniac One", sans-serif;
+  font-style: normal;
+}
 }
