@@ -13,7 +13,7 @@
 <body>
 
 
-<header3>
+  <header3>
 	     <header>
       <a href="#" class="brand">
       	<img src="img/logosamu.png">
@@ -35,7 +35,7 @@
         <i class="fas fa-bars menu-btn"></i>
       </div>
        </header>
-  </header3>
+      </header3>
  
     <footer2>
       <nav class="menu">
@@ -45,6 +45,9 @@
       </nav>
       <footer3>
         <nav class="menu">
+          <div class="btn">
+         
+          </div>
         </nav>
       </footer3>
 
@@ -54,6 +57,8 @@
     window.addEventListener("scroll", function(){
       var header = document.querySelector("header");
       header.classList.toggle('down', window.scrollY > 0);
+      var footer3 = document.querySelector("footer3");
+      footer3.classList.toggle('down3', window.scrollY > 0);
 
 	    //change logo
 	    var logo = document.querySelector(".brand img");
