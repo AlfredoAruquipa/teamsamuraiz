@@ -3,6 +3,46 @@
     color: white;
 } */
 
+
+
+@font-face {
+  font-family: 'Blender Pro';
+  src: url('BlenderPro-Thin.eot');
+  src: local('Blender Pro Thin'), local('BlenderPro-Thin'),
+      url('BlenderPro-Thin.eot?#iefix') format('embedded-opentype'),
+      url('/font/BlenderPro-Thin.woff2') format('woff2'),
+      url('/font/BlenderPro-Thin.woff') format('woff'),
+      url('/font/BlenderPro-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Blender Pro';
+  src: url('BlenderPro-Medium.eot');
+  src: local('/font/Blender Pro Medium'), local('BlenderPro-Medium'),
+      url('/font/BlenderPro-Medium.eot?#iefix') format('embedded-opentype'),
+      url('/font/BlenderPro-Medium.woff2') format('woff2'),
+      url('/font/BlenderPro-Medium.woff') format('woff'),
+      url('/font/BlenderPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Blender Pro';
+  src: url('/font/BlenderPro-Bold.eot');
+  src: local('/font/Blender Pro Bold'), local('BlenderPro-Bold'),
+        url('/font/BlenderPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/font/BlenderPro-Bold.woff2') format('woff2'),
+      url('/font/BlenderPro-Bold.woff') format('woff'),
+      url('/font/BlenderPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+
 @media (min-width: 768px) {
 body::-webkit-scrollbar{
   width: 10px;
@@ -328,7 +368,7 @@ h5 {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
        
   }
   
@@ -340,14 +380,14 @@ h5 {
     color: #ffffff;
     font-weight: 10;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
     text-decoration: none;
     margin: 0 35px;
 /*para botom circular
     padding: 7px 10px;
     border-radius: 10px;*/
-    font-family: "Monomaniac One", sans-serif;
-    font-style: normal;
+    font-family: 'Blender Pro';
+    font-weight: bold;
     transition-property: color, background;
   
   }
@@ -355,8 +395,9 @@ h5 {
   header .menu a:hover{
    
     color: #bf2df9;
-    font-family: "Monomaniac One", sans-serif;
-    font-style: normal;
+    font-family: 'Blender Pro';
+      font-weight: 100;
+   
     margin: 0;
     text-shadow: 0 0 5px #2b1335, 0 0 5px #bf2df9, 0 0 6px #bf2df9;
   }
@@ -368,7 +409,7 @@ h5 {
   
   header .btn{
     color: #ffffff;
-    font-size:35px;
+    font-size:50px;
     cursor: pointer;
     display: none;
   }
@@ -387,15 +428,16 @@ h5 {
   /*barra lateral todo mas color*/
     header .menu{
       position: fixed;
-      background: #1e1b22ef;
+      background-image: linear-gradient(to right, #1e1b22 , #20142f);
       backdrop-filter: blur(px); 
-      min-width: 450px;
+      min-width: 800px;
       height: 100vh;
       top: 0;
       right: -100%;
       padding: 80px 40px; 
       transition: 0s;
       transition-property: right;
+      border-block: 1px solid #625870;
     }
   
     header .menu ul{
@@ -412,12 +454,17 @@ h5 {
       left: 0;
       margin: 25px;
     }
-  
+  /* tamaño letras de menu lateral */
     header .menu a{
       display: block;
-      font-size: 20px;
+      font-size: 42px;
       margin: 20px;
       padding: 0 15px;
+      line-height: 2.9; /* interlineado */
+      font-family: 'Blender Pro';
+      font-weight: 100;
+      Letter-spacing:3px;
+     
     }
   }
   
@@ -592,8 +639,8 @@ font-family: "Monomaniac One", sans-serif;
   top: 38%;/* posicion arriba cel obejto */ 
   left: 4.6%;/* posicion derecha del objeto */ 
   font-size:  1.3rem;
-  font-family: "Saira Condensed", sans-serif;
-  font-weight: 300;
+  font-family: 'Blender Pro';
+      font-weight: normal;
   font-style: normal;
   word-spacing: 2pt;   /* separacion entre palabras */ 
   line-height: 10pt;   /* separacion entre lineas grosor de linea */ 
@@ -609,7 +656,8 @@ font-family: "Monomaniac One", sans-serif;
   left: 50px;
   transform: translate(10%,-250%); 
   font-size: 1.9rem;
-  font-family: "Monomaniac One", sans-serif;
+  font-family: 'Blender Pro';
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -623,11 +671,11 @@ height: 20px;
   position: absolute;
   top: 100%;
   left:35%;
-  transform: translate(10%,-250%); 
+  transform: translate(15%,-180%); 
   font-size: 4rem;
-  font-family: "Monomaniac One", sans-serif;
+  font-family: 'Blender Pro';
+  font-weight: bold;
   font-style: normal;
-}
 
 }
 
