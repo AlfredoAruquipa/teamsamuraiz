@@ -1,4 +1,89 @@
 
 
 @import  "//first-node-express-app-master/node_modules/bootstrap/scss/bootstrap.scss";
+.footer {
+	background-color: #190931;
+	color: #fff;
+	padding: 7rem 0;
+	border-block: 1px solid #7E2DF978;
+  }
+  .column {
+	flex-basis: calc(33.333% - 6rem);
+	margin: 0;
+  }
+  
+  .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+  }
+  
+  .social-media a {
+    margin-right: 25px;
+	justify-content: space-between;
+	align-items: center;
+	color: #beb3cf;
+  }
 
+
+  
+  .column h3 {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	font-family: 'Blender Pro';
+	font-weight: bold;
+	font-style: normal;
+  }
+  
+  .column ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #beb3cf;
+  }
+
+
+  
+  .column ul li {
+	flex-basis: calc(25% - 0.5rem);
+	
+  }
+  
+  .column ul li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #beb3cf;
+	font-size: 1.8rem;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+  }
+  
+  .column ul li a:hover {
+	background-color: #fff;
+	color: #428a00;
+  }
+  
+  .column p {
+	margin-bottom: 1rem;
+	font-family: 'Blender Pro';
+	font-weight: 100;
+	font-style: normal;
+  }
+  .column a {
+	
+	font-family: 'Blender Pro';
+	font-weight: 100;
+	font-style: normal;
+	color: #ffffff;
+	text-decoration: none;
+  }
+
+ 
